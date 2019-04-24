@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  h1 Sam-Media Orders
+  p.lead A sample order page - list of products added
+  hr
+  .row
+    .col-sm-6
+      h2 ABC - Pro
+      p Price: $ 13.5 
+      p Count: 3
+      p Total: $ 40.5
+      p
+        form(method='POST', action='/order')
+            input(type='hidden', name='productId', value='5c9ff4d71c9d440000b44e04')
+            input(type='hidden', name='productName', value='ABC - Pro')
+            input(type='hidden', name='productCount', value=3)
+            input(type='hidden', name='productPrice', value=13.5)
+            button.btn.btn-primary(type='submit') Order
+    .col-sm-6
+      h2 PQR - Delux
+      p Price: $ 200.0
+      p Count: 2
+      p Total: $ 400
+      p
+        form(method='POST', action='/order')
+            input(type='hidden', name='productId', value='5c9ff57d1c9d440000b44e05')
+            input(type='hidden', name='productName', value='PQR - Delux')
+            input(type='hidden', name='productCount', value=2)
+            input(type='hidden', name='productPrice', value=200.0)
+            button.btn.btn-primary(type='submit') Order
+  
+      
+       
+    

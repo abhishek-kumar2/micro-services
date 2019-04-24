@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 Sam-Media Order
+  p.lead Make Payment
+  hr
+  .row
+    .col-sm-6
+      h2 #{productName}
+      p Date: #{orderDate}
+      p Estimated Delivery date: #{orderDeliveryDate}
+      p Price: $ #{productPrice} 
+      p Count: #{productCount}
+      p Total: $ #{productCount * productPrice}
+      p
+      a.btn.btn-danger(href='/doPayment/' + _id) Pay

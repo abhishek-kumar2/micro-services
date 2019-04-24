@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Sam-Media Order
+  p.lead A sample order staus page
+  hr
+  .row
+    .col-sm-6
+      h2 #{productName}
+      p Price: $ #{productPrice} 
+      p Count: #{productCount}
+      p Total: $ #{productCount * productPrice}
+      p
+      p Status: #{orderState}
+      if orderState == 'create'  
+        a.btn.btn-primary.mr-2(href='http://localhost:4000/payment/' + _id) Make Payment
+        a.btn.btn-danger(href='http://localhost:5000/orderUpdate/' + _id + '/cancel') Cancel

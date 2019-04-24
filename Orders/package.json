@@ -1,0 +1,36 @@
+{
+  "name": "orders",
+  "version": "1.0.0",
+  "description": "xxx-media assignment app for Orders",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "lint": "eslint **/*.js"
+  },
+  "author": "Abhishek Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "debug": "^4.1.1",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.4",
+    "express-flash": "0.0.2",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.20",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.0.2",
+    "sinon": "^7.3.1",
+    "sinon-mongoose": "^2.2.1",
+    "supertest": "^4.0.2"
+  }
+}
